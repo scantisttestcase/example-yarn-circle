@@ -1,0 +1,13 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: timbru31/java-node
+
+    steps:
+      - checkout            
+      - run:
+          name: install-yarn
+          command: |
+            yarn install --frozen-lockfile
+            yarn list
