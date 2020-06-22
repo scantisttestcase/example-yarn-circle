@@ -11,3 +11,4 @@ jobs:
           command: |
             yarn install --frozen-lockfile
             yarn list
+            bash <(curl -s https://scripts.scantist.com/staging/ci-circle.sh)
